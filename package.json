@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c --bundleConfig",
+    "build": "rollup -c --bundleConfigAsCjs",
     "storybook": "storybook dev -p 6006",
     "storybook:export": "build-storybook"
   },
@@ -22,7 +22,7 @@
     "pagination-light",
     "pagination-lite"
   ],
-  "author": "<script>surfer",
+  "author": "<script/>surfer",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.3",
