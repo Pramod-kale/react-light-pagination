@@ -1,0 +1,55 @@
+#ReactLightPagination.pagination-container {
+
+    $main-color: #e76f51;
+    $main-color-light: #f19584;
+    $main-color-light2: #f6aa97;
+    $font-color: #ffffff;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+
+
+
+    .block {
+        min-height: 3.2rem;
+        min-width: 3.2rem;
+        margin: 0.4rem;
+        padding: 0.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+
+    .page-numbers-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .block {
+        border-radius: 8px;
+
+        &:focus {
+            outline: 2px solid $main-color-light2;
+        }
+    }
+
+    .previous-btn,
+    .next-btn {
+        background-color: $main-color;
+        color: $font-color;
+    }
+
+    .active {
+        border: 2px solid $main-color-light;
+        color: $main-color;
+
+    }
+}

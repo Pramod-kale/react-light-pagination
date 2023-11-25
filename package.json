@@ -1,7 +1,7 @@
 {
-  "name": "react-simple-pagination",
+  "name": "react-light-pagination",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple, lightweight, higly customisable simple react pagination component with typescript support",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [
@@ -9,13 +9,21 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c --bundleConfigAsCjs",
+    "build": "rollup -c --bundleConfig",
     "storybook": "storybook dev -p 6006",
     "storybook:export": "build-storybook"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "react-pagination",
+    "react-simple-component",
+    "pagination",
+    "pagination-react",
+    "react-light-pagination",
+    "pagination-light",
+    "pagination-lite"
+  ],
+  "author": "<script>surfer",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",

@@ -23,9 +23,9 @@
 //         return config;
 //     }
 // };
+const path = require('path');
 
-/** @type { import('@storybook/react-webpack5').StorybookConfig } */
-const config = {
+module.exports = {
     stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
     addons: [
         "@storybook/addon-links",
@@ -33,6 +33,16 @@ const config = {
         "@storybook/addon-onboarding",
         "@storybook/addon-interactions",
     ],
+    webpackFinal: async (config) => {
+        // Add SCSS loader
+        config.module.rules.push({
+            test: /\.scss$/,
+            use: ['style-loader', 'css-loader', 'sass-loader'],
+            include: path.resolve(__dirname, '../'),
+        });
+
+        return config;
+    },
     framework: {
         name: "@storybook/react-webpack5",
         options: {},
@@ -41,4 +51,22 @@ const config = {
         autodocs: "tag",
     },
 };
-export default config;
+
+// /** @type { import('@storybook/react-webpack5').StorybookConfig } */
+// const config = {
+//     stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+//     addons: [
+//         "@storybook/addon-links",
+//         "@storybook/addon-essentials",
+//         "@storybook/addon-onboarding",
+//         "@storybook/addon-interactions",
+//     ],
+//     framework: {
+//         name: "@storybook/react-webpack5",
+//         options: {},
+//     },
+//     docs: {
+//         autodocs: "tag",
+//     },
+// };
+// export default config;
