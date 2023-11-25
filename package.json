@@ -1,7 +1,7 @@
 {
   "name": "react-light-pagination",
   "version": "1.0.0",
-  "description": "simple, lightweight, higly customisable simple react pagination component with typescript support",
+  "description": "simple, lightweight, highly customisable simple react pagination component with typescript support",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [
