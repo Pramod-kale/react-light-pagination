@@ -66,7 +66,7 @@ The default styles for the pagination component are provided in the `Pagination.
 
 Feel free to explore and modify the styles in the `Pagination.scss` file to match your project's design.
 
-## Notes for First-time Users
+## Notes for Issues
 
 If you encounter any issues or have suggestions for improvement, please don't hesitate to open an issue on the [GitHub repository](#https://github.com/Pramod-kale/react-light-pagination/issues).
 
